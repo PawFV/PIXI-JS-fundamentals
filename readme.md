@@ -2,7 +2,7 @@
 
 ## Example1.js
 
-PIXI.JS with `Render({})` constructor instead of `Application({})`. `Application({})` constructor takes care of a lot of boilerplate code.
+Starts a PIXI.JS application using `Render({})` constructor instead of `Application({})`. `Application({})` constructor takes care of a lot of boilerplate code.
 
 * Has an event `resize()` to fit the view of the window when resizing.
 * Loads and animates a sprite with `Ticker()`.
@@ -10,7 +10,7 @@ PIXI.JS with `Render({})` constructor instead of `Application({})`. `Application
 ## Example2.js
 
 * Loads multiple Sprites using `Loader.shared`.
-* Loads multiple Events for loading such as `progress`, `load`, `error` & `load`.
+* Loads multiple Events for `Loader` such as `progress`, `load` & `error`.
 
 * Has an event when clicking the Sprite, to stop/start the animation.
 
@@ -67,3 +67,16 @@ function animate() {
   graphic.endFill();
 }
 ```
+
+## Example5.js
+
+Loads a sprite and applies a filter using `filters`.
+
+```js
+DUDE.filters = [new PIXI.filters.BlurFilter()];
+```
+
+##### Demos and docs.
+
+* [Filters Demo](https://pixijs.io/pixi-filters/tools/demo/) with every filter effect.
+* [Filter Documentation](http://pixijs.download/release/docs/PIXI.filters.html)

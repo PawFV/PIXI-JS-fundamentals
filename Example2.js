@@ -45,7 +45,7 @@ function handleLoadComplete() {
   app.stage.addChild(circle);
 
   app.ticker.add(rotate);
-  console.log(app.ticker);
+  
   setTimeout(() => {
     circle.texture = loader.resources['assets/star.png'].texture;
   }, 2000);
