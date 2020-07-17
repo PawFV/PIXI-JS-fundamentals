@@ -7,11 +7,11 @@ const app = new PIXI.Application({
 
 let sprite1, sprite2, sprite3;
 // Load texture converts it to sprite
-const texture = new PIXI.Texture.from('assets/sky.png');
+const textureBG = new PIXI.Texture.from('assets/sky.png');
+const BG = new PIXI.Sprite(textureBG);
 const texture1 = new PIXI.Texture.from('assets/bomb.png');
 const texture2 = new PIXI.Texture.from('assets/circle.png');
 const texture3 = new PIXI.Texture.from('assets/dude.png');
-const BG = new PIXI.Sprite(texture);
 // Setting position
 BG.x = app.renderer.screen.width / 2;
 BG.y = app.renderer.screen.height / 2;
