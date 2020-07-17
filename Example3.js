@@ -75,4 +75,3 @@ function spin() {
     sprites[i].rotation += 0.1;
   }
 }
-
