@@ -39,17 +39,11 @@ function drawLine(fromX, fromY, toX, toY) {
 }
 
 // ANIMATE SHAPE
-let radius = 20;
-
-graphic.lineStyle(3, 0x00ff00);
-graphic.beginFill(0xff0000);
-graphic.arc(0, 0, radius, 0, Math.PI * 2)
-graphic.endFill();
-
 setTimeout(() => {
   app.ticker.add(animate);
-}, 6000);
+}, 2000);
 
+let radius = 20;
 let delta = 0;
 function animate() {
   delta += 0.04;
